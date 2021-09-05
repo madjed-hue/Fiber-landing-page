@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/login.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <div id="login__page">
+        <div class="container">
+            <div class="login__profile">
+                <div class="login__detail">
+                    <div class="logo">
+                        <h4>Fiber</h4>
+                    </div>
+                    <div class="heading">
+                        <h1>Create your Fiber account</h1>
+                    </div>
+                    <form action="" method="post">
+                        <label for="name">Your Name</label>
+                        <input type="text" placeholder="Jhon Doe" class="form-control" required>
+                        <label for="email">E-mail</label>
+                        <input type="email" placeholder="jhon@exemple.com" class="form-control" required>
+                        <label for="password">Password</label>
+                        <input type="password" placeholder="At least 8 characters" class="form-control" id="pass" required>
+                        <img src="/Assets/hide password.svg" alt="" id="hide-pass">
+                        <img src="/Assets/eye-slash.svg" alt="" id="show-pass">
+                        <div class="checkbox">
+                            <input type="checkbox" name="chek" id="check" class="check__button" required>
+                            <p>By creating an account on Fiber, you agree to the <a href="#">Terms and Condition</a></p>
+                        </div>
+                        <button type="submit">Creat Fiber Account</button>
+                    </form>
+                    <div class="already">
+                        <p>Already have an account? <a href="#">Sign In</a></p>
+                    </div>
+                </div>
+                <div class="login__image">
+                    <img src="/Assets/Sign Up Image.png" alt="sign up" >
+                    <div class="info">
+                        <h1>Unparalleled Templates</h1>
+                        <p>Crafted bu a team of professional designers, our templates are eunparalleled in the market.</p>
+                    </div>
+                    <div class="bullets">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/login.js"></script>
+</body>
+</html>

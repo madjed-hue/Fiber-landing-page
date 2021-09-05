@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Inter', sans-serif;
+}
+#login__page{
+    background-color: #fff;
+    position: relative;
+}
+#login__page .container {
+    position: absolute;
+    width: 80vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 2%);
+}
+#login__page .login__profile{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#login__page .login__profile > div{
+    flex: 1;
+    padding: 30px 41px;
+    height: 95vh;
+}
+.login__detail{
+    display: flex;
+    flex-direction: column;
+}
+.login__detail form{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 73%;
+    margin-left: 12%;
+}
+.login__detail form img{
+    position: absolute;
+    width: 25px;
+    right: 20px;
+    top: 57%;
+    cursor: pointer;
+}
+.login__detail form #show-pass{
+    display: block;
+}
+.login__detail form #hide-pass{
+    display: none;
+}
+
+
+.login__detail .logo{
+    margin-bottom: 40px;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-left: 12%;
+}
+.login__detail .heading{
+    margin-bottom: 45px;
+    font-size: 20px;
+    margin-left: 12%;
+}
+.login__detail form label{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.login__detail form input{
+    margin-bottom: 25px;
+    padding: 20px 15px;
+    border-radius: 4px;
+    border: 0.5px solid #ccc;
+    outline: none;
+    overflow: hidden;
+    font-size: 18px;
+    letter-spacing: 0.6px;
+    font-weight: 500;
+}
+.login__detail form input:last-of-type{
+    margin-bottom: 25px;
+}
+.login__detail form input::placeholder{
+    color: #ccc;
+}
+.login__detail form .checkbox{
+    display: flex;
+    margin-bottom: 25px;
+}
+.login__detail form .checkbox > input{
+    width: 20px;
+    height: 20px;
+    border: 0.5px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    outline: none;
+    margin-right: 10px;
+}
+.login__detail form .checkbox p{
+    font-size: 18px;
+    font-weight: 500;
+}
+.login__detail form .checkbox p a{
+    color: #4D13D1;
+}
+.login__detail button{
+    background-color: #4D13D1;
+    border-style: none;
+    padding: 20px 20px;
+    border-radius: 4px;
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+    cursor: pointer;
+    width: 100%;
+    margin-left: 0;
+}
+.login__detail .already{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    width: 75%;
+    margin-left: 12%;
+}
+.login__detail .already p a{
+    color: #4D13D1;
+    text-decoration: none;
+}
+
+.login__image{
+    /* background-color: #4d13d1; */
+    color: #fff;
+    background-image: radial-gradient(circle, #4d13d1bf, #4d13d1e0, #4d13d1eb, #4d13d1, #4d13d1);
+}
+.login__image img{
+    width: 550px;
+    margin-bottom: 40px;
+    margin-top: 15%;
+}
+.login__image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login__image .info{
+    text-align: center;
+}
+.login__image .info h1{
+    font-size: 36px;
+    letter-spacing: 0.9px;
+    margin-bottom: 15px;
+}
+.login__image .info p{
+    line-height: 1.9;
+    font-size: 18px;
+    width: 420px;
+    color: #ffffffbd;
+}
+.login__image .bullets ul {
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+    margin-top: 15px;
+}
+.login__image .bullets ul li{
+    list-style: none;
+    background-color: #ccc9;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    
+}
+.login__image .bullets ul li:first-child{
+    background-color: #fff;
+}
+@media (max-width: 991.98px){
+    .login__profile .login__image{
+        display: none;
+    }
+}
+@media (max-width: 425px){
+    .login__detail form{
+        width: 100%;
+        margin-left: 0;
+    }
+    .login__detail form .checkbox p{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .login__detail button{
+        width: 100%;
+        margin-left: 0;
+    }
+    .login__detail .already{
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        width: 100%;
+        margin-left: 0;
+    }
+    .login__detail form .checkbox > input{
+        width: 35px;
+        height: 35px;
+        border: 0.5px solid #ccc;
+        border-radius: 10px;
+        margin-right: 10px;
+    }
+    .login__detail form .checkbox p{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .login__detail .logo{
+        margin-left: 0;
+    }
+    .login__detail .heading{
+        font-size: 16px;
+        margin-left: 0;
+    }
+    .login__detail form img{
+        right: 15px;
+        top: 66%;
+    }
+    #login__page .container {
+        width: 85vw;
+    }
+}
